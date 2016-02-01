@@ -1,0 +1,67 @@
+.navbar-default {
+  
+  background: transparent;   	
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: red;
+    background: transparent;
+
+}
+
+.main {
+	padding-top: 10px;
+}
+
+header {
+   height: 165px;	
+   background-image: linear-gradient(to top left, white, lightblue);
+   
+}
+
+
+.footer {
+	font-size: 90%;
+	
+}
+
+
+.logo img {
+	padding-top: 2px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.sidebar {
+
+	
+}
+
+.baner {
+	position: fixed;
+}
+
+.banner img {
+	padding: 3px;
+    
+}
+
+.banner img:hover {
+   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+ 
+}
+
+.info {
+	margin-top: 5px;
+}
+
+.panel-warning {
+	width: 230px;
+}
+
+
+
+
