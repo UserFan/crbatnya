@@ -12,13 +12,14 @@ html
         header
           = render 'layouts/header'
         .main
-          .col-sm-4.col-md-3.sidebar
+          .col-md-3.col-xs-12.sidebar
             = render 'layouts/aside'
-          .col-sm-7.col-md-6
+          .col-md-6.col-xs-12
             = render_breadcrumbs :separator => ' / '
             = render 'shared/flash', flash: flash 
             = yield
-          .col-sm-3.col-md-3.pull-right
+          .col-md-3.col-xs-12
             = render 'layouts/banner'
-          .col-md-12.footer  
+        .row
+          .col-md-12.footer
             = render 'layouts/footer'

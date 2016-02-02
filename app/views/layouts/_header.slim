@@ -1,30 +1,29 @@
 .row
   .container-fluid
-    .col-sm-12
-      .col-sm-2.logo
-        img src='assets/logo_medic1.png' alt="gerb"
-      .col-sm-8
-        h3 Государственное автономное учреждение здравоохранения 
-        h3 "Атнинская центральная районная больница"
-      .col-sm-2
+    .col-xs-18.col-md-12
+      .col-xs-2.col-md-2.pull-left.logo = image_tag('logo_medic1.png', alt: 'gerb')
+      .col-xs-18.col-md-8
+        h3 
+          |Государственное автономное учреждение здравоохранения 
+          |'\nb\'"Атнинская центральная районная больница"
+      .col-md-2.col-xs-18
         h5.span.glyphicon.glyphicon-phone-alt.text-info.pull-right 8(8-269)2-21-00
-        /.row
-          /.col-sm-12
-        h5.span.glyphicon.glyphicon-envelope.text-info.pull-right srb.atnya@tatar.ru
-        p 
-          /br
-          = link_to "Запись к специалисту", '#', class: "btn btn-large btn-primary info" 
-      .col-sm-10
-        nav.navbar.navbar-default.navbar-static-top[role="navigation"]
+        .row
+          .col-md-12.col-xs-12
+            .span.glyphicon.glyphicon-envelope.text-info.pull-right.mail = mail_to 'srb.atnya@tatar.ru'
+          .col-md-12.col-xs-12.enroll
+            p.pull-right = link_to 'Запись к специалисту', 'https://uslugi.tatarstan.ru/mis/index', target: '_blank', class: 'btn btn-large btn-primary info' 
+      .col-xs-18.col-md-10
+        nav.navbar.navbar-default.navbar-static-top.navbar-right[role='navigation']
           .navbar-header
-            button.navbar-toggle[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"]
+            button.navbar-toggle[type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1']
               span.sr-only
                 | Toggle navigation
               span.icon-bar
               span.icon-bar
               span.icon-bar
           .collapse.navbar-collapse#bs-example-navbar-collapse-1
-            ul.nav.navbar-nav.navbar-right
+            ul.nav.navbar-nav
               li
                 = link_to 'Главная', root_path
               li
@@ -34,7 +33,7 @@
               li
                 = link_to 'Запись к специалисту', '#'
       
-/
+  /
         - if current_user
           li.dropdown
             a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"

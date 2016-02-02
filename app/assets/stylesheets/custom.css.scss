@@ -1,5 +1,5 @@
 .navbar-default {
-  
+  top: 20px;
   background: transparent;   	
   border-color: transparent;
 }
@@ -16,36 +16,34 @@
 }
 
 header {
-   height: 165px;	
+   
    background-image: linear-gradient(to top left, white, lightblue);
    
 }
 
-
 .footer {
 	font-size: 90%;
-	
 }
-
 
 .logo img {
-	padding-top: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
     width: 100%;
     height: auto;
-    
+
 }
 
-.sidebar {
-
-	
+.enroll {
+    top: 30px;
 }
 
-.baner {
-	position: fixed;
+.mail {
+	top: 10px;
 }
 
 .banner img {
 	padding: 3px;
+
     
 }
 
@@ -54,12 +52,11 @@ header {
  
 }
 
-.info {
-	margin-top: 5px;
-}
+
 
 .panel-warning {
 	width: 230px;
+
 }
 
 
