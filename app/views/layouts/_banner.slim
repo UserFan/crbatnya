@@ -2,15 +2,15 @@
   /! Wrapper for slides
   .carousel-inner
     .item.active
-      img src="assets/banner_8.png" alt="Горячая линия" border="0" 
+      = image_tag('banner_8.png', alt: 'Горячая линия')
     .item
-      img src="assets/banner_9.png" alt="Сообщи где торгуют смертью" border="0"       
+      = image_tag('banner_9.png', alt: 'Сообщи где торгуют смерть')
     .item
-      a href="http://www.amrrt.ru" target="_blank"
-	    img src="assets/banner_10.png" alt="Ассоциация медработников РТ" border="0"
-	.item
-      a href="http://rckrt.ru" target="_blank"
-	    img src="assets/banner_11.png" alt="Сдай кровь" border="0"
+      = link_to('http://www.amrrt.ru', target: '_blank')
+        = image_tag('banner_10.png', alt: 'Ассоциация медработников РТ')
+    .item
+      = link_to('http://rckrt.ru', target: '_blank')
+        = image_tag('banner_11.png', alt: 'Сдай кровь')
   /! Controls
   a.left.carousel-control data-slide="prev" href="#carousel-example-generic" 
     span.glyphicon.glyphicon-chevron-left
@@ -21,18 +21,16 @@
     h6.panel-title Полезные ссылки
   .panel-body
     = link_to('http://www.rosminzdrav.ru/', target: '_blank')
-      .img-responsive.img-rounded = image_tag('60_pic_ru.png', alt: 'Минздрав РФ')
-    /a href="http://www.rosminzdrav.ru/" target="_blank"
-      /img.img-responsive.img-rounded src="assets/60_pic_ru.png" alt="Минздрав РФ" border="1"
-    a href="http://president.tatar.ru/" target="_blank"
-      img.img-responsive.img-rounded src="assets/7_pic.gif" alt="Президент РТ" border="0"
-    a href="http://portal.tatarstan.ru/" target="_blank"
-      img.img-responsive.img-rounded src="assets/11_pic_ru.png" alt="Портал РТ" border="0"
-    a href="http://minzdrav.tatarstan.ru/" target="_blank"
-      img.img-responsive.img-rounded src="assets/10_pic_ru.png" alt="Минздрав РТ" border="0"
-    a href="http://atnya.tatarstan.ru/rus/index.htm" target="_blank"
-      img.img-responsive.img-rounded src="assets/14_pic_ru.png" alt="Атнинский район" border="0"
-    a href="https://zdrav.tatar.ru/" target="_blank"
-      img.img-responsive.img-rounded src="assets/09_pic_ru.png" alt="Портал здравоохранения" border="0"
+      = image_tag('60_pic_ru.png', alt: 'Минздрав РФ', class: 'img-responsive img-rounded')
+    = link_to('http://president.tatar.ru/', target: '_blank')
+      = image_tag('7_pic.gif', alt: 'Президент РТ', class: 'img-responsive img-rounded')
+    = link_to('http://portal.tatarstan.ru/', target: '_blank')
+      = image_tag('11_pic_ru.png', alt: 'Портал РТ', class: 'img-responsive img-rounded')
+    = link_to('http://minzdrav.tatarstan.ru/', target: '_blank')
+      = image_tag('10_pic_ru.png', alt: 'Минздрав РТ', class: 'img-responsive img-rounded')
+    = link_to('http://atnya.tatarstan.ru/rus/index.htm', target: '_blank')
+      = image_tag('14_pic_ru.png', alt: 'Атнинский район', class: 'img-responsive img-rounded')
+    = link_to('https://zdrav.tatar.ru/', target: '_blank')
+      = image_tag('09_pic_ru.png', alt: 'Портал здравоохранения', class: 'img-responsive img-rounded')
 
     
