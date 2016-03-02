@@ -20,15 +20,19 @@
   .panel-heading 
     h6.panel-title Полезные ссылки
   .panel-body
-	a href="http://www.rosminzdrav.ru/" target="_blank"
-	  img.img-responsive.img-rounded src="../assets/images/60_pic_ru.png" alt="Минздрав РФ" border="1"
-	a href="http://president.tatar.ru/" target="_blank"
-	  img.img-responsive.img-rounded src="assets/7_pic.gif" alt="Президент РТ" border="0"
-	a href="http://portal.tatarstan.ru/" target="_blank"
-	  img.img-responsive.img-rounded src="assets/11_pic_ru.png" alt="Портал РТ" border="0"
-	a href="http://minzdrav.tatarstan.ru/" target="_blank"
-	  img.img-responsive.img-rounded src="assets/10_pic_ru.png" alt="Минздрав РТ" border="0"
-	a href="http://atnya.tatarstan.ru/rus/index.htm" target="_blank"
-	  img.img-responsive.img-rounded src="assets/14_pic_ru.png" alt="Атнинский район" border="0"
-	a href="https://zdrav.tatar.ru/" target="_blank"
-	  img.img-responsive.img-rounded src="assets/09_pic_ru.png" alt="Портал здравоохранения" border="0"
+    = link_to('http://www.rosminzdrav.ru/', target: '_blank')
+      .img-responsive.img-rounded = image_tag('60_pic_ru.png', alt: 'Минздрав РФ')
+    /a href="http://www.rosminzdrav.ru/" target="_blank"
+      /img.img-responsive.img-rounded src="assets/60_pic_ru.png" alt="Минздрав РФ" border="1"
+    a href="http://president.tatar.ru/" target="_blank"
+      img.img-responsive.img-rounded src="assets/7_pic.gif" alt="Президент РТ" border="0"
+    a href="http://portal.tatarstan.ru/" target="_blank"
+      img.img-responsive.img-rounded src="assets/11_pic_ru.png" alt="Портал РТ" border="0"
+    a href="http://minzdrav.tatarstan.ru/" target="_blank"
+      img.img-responsive.img-rounded src="assets/10_pic_ru.png" alt="Минздрав РТ" border="0"
+    a href="http://atnya.tatarstan.ru/rus/index.htm" target="_blank"
+      img.img-responsive.img-rounded src="assets/14_pic_ru.png" alt="Атнинский район" border="0"
+    a href="https://zdrav.tatar.ru/" target="_blank"
+      img.img-responsive.img-rounded src="assets/09_pic_ru.png" alt="Портал здравоохранения" border="0"
+
+    
