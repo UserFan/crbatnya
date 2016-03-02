@@ -1,0 +1,28 @@
+#myModal.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" 
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-hidden="true" data-dismiss="modal" type="button"  &times;
+        h4#myModalLabel.modal-title Узнать свой участок
+      .modal-body
+        form role="form" 
+          .form-group
+            label for="area"  Район
+            select#area.form-control 
+              option Атнинский район
+          .form-group
+            label for="locality"  Населенный пункт
+            select#locality.form-control 
+              option с.Большая Атня
+              option Кубянь
+          .form-group
+            label for="street"  Улица
+            select#street.form-control 
+              option Пионерская
+              option К.Маркса
+          .form-group
+            label for="house"  Дом
+            input#house.form-control placeholder=("введите номер дома") type="house" /
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Закрыть
+        button.btn.btn-primary type="button"  Поиск

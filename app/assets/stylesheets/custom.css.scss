@@ -1,36 +1,49 @@
 .navbar-default {
-  top: 20px;
-  background: transparent;   	
-  border-color: transparent;
+    top: 20px;
+    background: transparent;   	
+    border-color: transparent;   
 }
 
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: red;
     background: transparent;
+    outline: none;
 
+}
+
+.navbar-default .navbar-toggle {
+  border-color: green;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu {
+    background-image: linear-gradient(to top left, white, lightblue);
 }
 
 .main {
-	padding-top: 10px;
+	  padding-top: 10px;
 }
 
-header {
-   
-   background-image: linear-gradient(to top left, white, lightblue);
-   
+.glyphicon-user {
+    padding-right: 5px;
+}
+
+header {   
+   background-image: linear-gradient(to top left, white, lightblue);   
 }
 
 .footer {
-	font-size: 90%;
+  	font-size: 90%;
 }
 
 .logo img {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
     width: 100%;
     height: auto;
-
 }
 
 .enroll {
@@ -42,23 +55,91 @@ header {
 }
 
 .banner img {
-	padding: 3px;
-
-    
+	  padding: 3px;  
 }
 
 .banner img:hover {
-   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
- 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); 
 }
 
-
-
-.panel-warning {
-	width: 230px;
-
+.banner {
+    margin-top: 15px;
+  	width: 240px;
 }
 
+#accordion li {
+    font-size: 88%;
+}
+
+#carousel-example-generic {
+   width: 240px;
+   top: 10px;
+}
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+
+#login-dp .social-buttons a{
+    width: 49%;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+
+@media(max-width:768px){
+
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
 
 
 

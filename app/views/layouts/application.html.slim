@@ -7,6 +7,7 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+    = render 'layouts/modal_lot' 
     .container
       .row
         header
@@ -15,11 +16,15 @@ html
           .col-md-3.col-xs-12.sidebar
             = render 'layouts/aside'
           .col-md-6.col-xs-12
-            = render_breadcrumbs :separator => ' / '
+            .breadcrumb = render_breadcrumbs :separator => ' / '
             = render 'shared/flash', flash: flash 
             = yield
           .col-md-3.col-xs-12
+            .input-group
+              input.form-control placeholder="Поиск по сайту" type="text"
+              span.input-group-btn
+                button.btn.btn-default type="submit"
+                  span.glyphicon.glyphicon-search
             = render 'layouts/banner'
-        .row
-          .col-md-12.footer
+        .col-md-12.footer
             = render 'layouts/footer'

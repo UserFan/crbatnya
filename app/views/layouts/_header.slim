@@ -3,9 +3,8 @@
     .col-xs-18.col-md-12
       .col-xs-2.col-md-2.pull-left.logo = image_tag('logo_medic1.png', alt: 'gerb')
       .col-xs-18.col-md-8
-        h3 
-          |Государственное автономное учреждение здравоохранения 
-          |'\nb\'"Атнинская центральная районная больница"
+        h3 Государственное автономное учреждение здравоохранения 
+        h3 "Атнинская центральная районная больница"
       .col-md-2.col-xs-18
         h5.span.glyphicon.glyphicon-phone-alt.text-info.pull-right 8(8-269)2-21-00
         .row
@@ -24,15 +23,62 @@
               span.icon-bar
           .collapse.navbar-collapse#bs-example-navbar-collapse-1
             ul.nav.navbar-nav
-              li
-                = link_to 'Главная', root_path
-              li
-                = link_to 'О больнице', about_path
-              li
-                = link_to 'Визит в больницу', '#'
-              li
-                = link_to 'Запись к специалисту', '#'
-      
+              li = link_to 'Главная', root_path
+              li.dropdown
+                a.dropdown-toggle data-toggle="dropdown" href="#" 
+                  | О больнице
+                ul.dropdown-menu.dropdown-menu-left[role="menu"]
+                  li = link_to 'История', root_path
+                  li = link_to 'Руководство', root_path
+                  li = link_to 'Карьера', root_path
+                  li = link_to 'Нормативные документы', root_path
+                  li = link_to 'Положение о закупках товаров, работ и услуг', root_path
+                  li = link_to 'Лицензии', root_path
+                  li = link_to 'Отзывы о больнице', root_path
+              li.dropdown
+                a.dropdown-toggle data-toggle="dropdown" href="#" 
+                  | Визит в больницу                  
+                ul.dropdown-menu.dropdown-menu-left[role="menu"]
+                  li = link_to 'Как нас найти', root_path
+                  li = link_to 'Режим работы', root_path
+                  li = link_to 'Необходимые документы', root_path
+                  li = link_to 'Подготовка к обследованиям', root_path
+              li = link_to 'Узнай свой участок', '#myModal', "data-toggle" => "modal"
+                 
+              li.dropdown
+                a.dropdown-toggle data-toggle="dropdown" href="#" 
+                  span.glyphicon.glyphicon-user
+                  | Вход
+                ul#login-dp.dropdown-menu
+                  li
+                    .row
+                      .col-md-12
+                        | Войти с помощью  
+                        .social-buttons
+                          a.btn.btn-fb href="#" 
+                            i.fa.fa-facebook
+                            | Facebook
+                          a.btn.btn-tw href="#" 
+                            i.fa.fa-twitter
+                            | Twitter
+                        form#login-nav.form accept-charset="UTF-8" action="login" method="post" role="form" 
+                          .form-group
+                            label.sr-only for="exampleInputEmail2"  Email address
+                            input#exampleInputEmail2.form-control placeholder=("Email address") required="" type="email" /
+                          .form-group
+                            label.sr-only for="exampleInputPassword2"  Пароль
+                            input#exampleInputPassword2.form-control placeholder="Password" required="" type="password" /
+                            .help-block.text-right
+                              a href=""  Забыли пароль?
+                          .form-group
+                            button.btn.btn-primary.btn-block type="submit"  Войти
+                          .checkbox
+                            label
+                              input type="checkbox" /
+                              | запомнить меня
+                      .bottom.text-center
+                        a href="#" 
+                          b Регистрация  
   /
         - if current_user
           li.dropdown

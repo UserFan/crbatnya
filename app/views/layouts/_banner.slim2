@@ -1,0 +1,16 @@
+.panel.panel-warning.banner
+  .panel-heading 
+    h6.panel-title Полезные ссылки
+  .panel-body
+	a href="http://www.rosminzdrav.ru/" target="_blank"
+	  img.img-responsive.img-rounded src="assets/60_pic_ru.png" alt="" border="1"
+	a href="http://president.tatar.ru/" target="_blank"
+	  img.img-responsive.img-rounded src="assets/7_pic.gif" alt="" border="0"
+	a href="http://portal.tatarstan.ru/" target="_blank"
+	  img.img-responsive.img-rounded src="assets/11_pic_ru.png" alt="" border="0"
+	a href="http://minzdrav.tatarstan.ru/" target="_blank"
+	  img.img-responsive.img-rounded src="assets/10_pic_ru.png" alt="" border="0"
+	a href="http://atnya.tatarstan.ru/rus/index.htm" target="_blank"
+	  img.img-responsive.img-rounded src="assets/14_pic_ru.png" alt="" border="0"
+	a href="https://zdrav.tatar.ru/" target="_blank"
+	  img.img-responsive.img-rounded src="assets/09_pic_ru.png" alt="" border="0"
