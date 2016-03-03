@@ -13,13 +13,13 @@ html
         header
           = render "layouts/header"
         .main
-          .col-md-3.col-sm-1.col-xs-12.sidebar
+          .col-md-3.col-sm-4.col-xs-12.sidebar
             = render "layouts/aside"
-          .col-md-6.col-sm-3.col-xs-12
+          .col-md-6.col-sm-4.col-xs-12
             .breadcrumb = render_breadcrumbs :separator => " / "
             = render "shared/flash", flash: flash 
             = yield
-          .col-md-3.col-sm-1.col-xs-12
+          .col-md-3.col-sm-4.col-xs-12
             .input-group
               input.form-control placeholder="Поиск по сайту" type="text"
               span.input-group-btn
