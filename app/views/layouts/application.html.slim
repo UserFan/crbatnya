@@ -3,21 +3,21 @@ html
   head
     title ГАУЗ "Атнинская центральная районная больница"
 
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   body
-    = render 'layouts/modal_lot' 
+    = render "layouts/modal_lot" 
     .container
       .row
         header
-          = render 'layouts/header'
+          = render "layouts/header"
         .main
           .col-md-3.col-xs-12.sidebar
-            = render 'layouts/aside'
+            = render "layouts/aside"
           .col-md-6.col-xs-12
-            .breadcrumb = render_breadcrumbs :separator => ' / '
-            = render 'shared/flash', flash: flash 
+            .breadcrumb = render_breadcrumbs :separator => " / "
+            = render "shared/flash", flash: flash 
             = yield
           .col-md-3.col-xs-12
             .input-group
@@ -25,6 +25,6 @@ html
               span.input-group-btn
                 button.btn.btn-default type="submit"
                   span.glyphicon.glyphicon-search
-            = render 'layouts/banner'
+            = render "layouts/banner"
         .col-md-12.footer
-            = render 'layouts/footer'
+            = render "layouts/footer"
