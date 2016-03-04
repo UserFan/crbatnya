@@ -1,19 +1,19 @@
 .row
   .container-fluid
-    .col-xs-12.col-md-12
-      .col-xs-2.col-md-2.pull-left.logo = image_tag("logo_medic1.png", alt: "gerb")
-      .col-xs-12.col-md-8
-        h3 Государственное автономное учреждение здравоохранения 
-        h3 "Атнинская центральная районная больница"
-      .col-md-2.col-xs-8
+    .col-sm-12
+      .col-xs-4.col-sm-2.pull-left.logo = image_tag("logo_medic1.png", alt: "gerb")
+      .col-sm-8
+        h3 Государственное автономное учреждение здравоохранения            
+           "Атнинская центральная районная больница"
+      .col-sm-2
         h5.span.glyphicon.glyphicon-phone-alt.text-info
           |  8(8-269)2-21-00
         .row
-          .col-md-12.col-xs-12
-            .span.glyphicon.glyphicon-envelope.text-info.mail = mail_to " srb.atnya@tatar.ru"
-          .col-md-12.col-xs-12.enroll
-            p.pull-right = link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info" 
-      .col-xs-12.col-md-10
+          .col-sm-12
+            .span.glyphicon.glyphicon-envelope.text-info.mail = mail_to "#{ }srb.atnya@tatar.ru"
+          .col-sm-12.enroll
+            p.pull-right = link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info"
+      .col-sm-10
         nav.navbar.navbar-default.navbar-static-top.navbar-right[role="navigation"]
           .navbar-header
             button.navbar-toggle[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"]

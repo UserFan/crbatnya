@@ -32,7 +32,11 @@
 }
 
 header {   
-   background-image: linear-gradient(to top left, white, lightblue);   
+   background-image: linear-gradient(to top left, white, lightblue); 
+}
+
+header h3 {
+    line-height: 1.5;
 }
 
 .footer {

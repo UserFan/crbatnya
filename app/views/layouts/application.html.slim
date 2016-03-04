@@ -14,18 +14,18 @@ html
         header
           = render "layouts/header"
         .main
-          .col-md-3.col-xs-12.sidebar
+          .col-sm-3.sidebar
             = render "layouts/aside"
-          .col-md-6.col-xs-12
+          .col-sm-6
             .breadcrumb = render_breadcrumbs :separator => " / "
             = render "shared/flash", flash: flash 
             = yield
-          .col-md-3.col-xs-12
+          .col-sm-3
             .input-group
               input.form-control placeholder="Поиск по сайту" type="text"
               span.input-group-btn
                 button.btn.btn-default type="submit"
                   span.glyphicon.glyphicon-search
             = render "layouts/banner"
-        .col-md-12.footer
+        .col-sm-12.col-xs-12.footer
             = render "layouts/footer"
