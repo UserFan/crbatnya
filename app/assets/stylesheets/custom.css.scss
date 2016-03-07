@@ -52,6 +52,7 @@ header h3 {
 .panel_phone {
     
     margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: -20px;
     margin-right: -50px;
     width: auto;
@@ -75,7 +76,7 @@ header h3 {
 }
 
 .entry_doctor {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .footer { font-size: 90%; }
@@ -180,7 +181,7 @@ header h3 {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #searchbar {
-    width: 150px;
+    width: 200px;
   }
 }
 
