@@ -34,19 +34,34 @@ header h3 { line-height: 1.5; }
     
 }
 
+
 .context {
-    margin-left: -40px;
+    
     margin-left: -10px;
 }
 
 .panel_phone {
-    margin: 0px;
+  
+    margin-top: 15px;
+    margin-left: -20px;
+    margin-right: -50px;
+}
+.panel_phone .panel-default {
+    
+    width: auto;
     background: transparent;
 }
 
 .footer { font-size: 90%; }
 
+.title-logo {
+    margin-left: -25px;
+    margin-right: -10px; 
+}
+
 .logo img {
+    margin-left: -20px;
+    margin-right: -20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
     width: 100%;
@@ -127,6 +142,7 @@ header h3 { line-height: 1.5; }
         background-color: inherit;
         border-top:0 none;
     }
+
 }
 
 

@@ -22,7 +22,7 @@ html
             .breadcrumb = render_breadcrumbs :separator => " / "
             = render "shared/flash", flash: flash           
             = yield
-          .col-sm-3
+          .col-sm-3.hidden-xs
             = render "layouts/banner"
         .col-sm-12.col-xs-12.footer
           = render "layouts/footer"

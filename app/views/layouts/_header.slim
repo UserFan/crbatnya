@@ -2,13 +2,16 @@
   .col-sm-12
     .container-fluid
       .col-xs-4.col-sm-2.pull-left.logo = image_tag("logo_medic1.png", alt: "gerb")
-      .col-sm-8
+      .col-sm-8.title-logo
         h3 Государственное автономное учреждение здравоохранения "Атнинская центральная районная больница"
       .col-sm-2
-        .panel.panel-default.panel_phone
-          .panel-body
-            h4.span.glyphicon.glyphicon-phone-alt.text-info
-              |  8(8269)2-21-00
-            p.span.glyphicon.glyphicon-envelope.text-info = mail_to "srb.atnya@tatar.ru"
+        .container-fluid.panel_phone.hidden-xs
+          .row
+            .panel.panel-default
+              .panel-body
+                h4.span.glyphicon.glyphicon-phone-alt.text-info
+                  |  8(8269)2-21-00
+                .row
+                p.span.glyphicon.glyphicon-envelope.text-info = mail_to "srb.atnya@tatar.ru"
  
       
