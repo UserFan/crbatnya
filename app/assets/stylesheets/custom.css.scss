@@ -1,5 +1,5 @@
 .navbar-default {
-    top: 20px;
+    bottom: 5px;
     background: transparent;   	
     border-color: transparent;   
 }
@@ -20,7 +20,24 @@
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu {
-    background-image: linear-gradient(to top left, white, lightblue);
+    background-image: linear-gradient(to top left, white, lightgreen);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+
+@media (max-width: 767px) {
+/* Цвет пунктов меню в раскрывающихся списках */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+/* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-image: linear-gradient(to top left, white, lightgreen);
+    }
 }
 
 .main {
@@ -29,6 +46,12 @@
 
 .glyphicon-user {
    
+}
+
+.menu_bar {
+   height: 40px;
+   border-radius: 5px;
+   background-image: linear-gradient(to top left, white, #428bca); 
 }
 
 header {   

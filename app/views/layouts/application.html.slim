@@ -13,6 +13,9 @@ html
       .row
         header
           = render "layouts/header"
+        .menu_bar
+          = render "layouts/menu_bar"
+      .row
         .main
           .col-sm-3.sidebar
             = render "layouts/aside"
@@ -27,5 +30,6 @@ html
                 button.btn.btn-default type="submit"
                   span.glyphicon.glyphicon-search
             = render "layouts/banner"
+      .row
         .col-sm-12.col-xs-12.footer
             = render "layouts/footer"
