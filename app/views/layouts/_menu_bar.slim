@@ -1,7 +1,7 @@
 .row
-  .container-fluid
-    .col-sm-12
-      nav.navbar.navbar-default.navbar-static-top.navbar-right[role="navigation"]
+  .col-sm-12
+    nav.navbar.navbar-default.navbar-static-top[role="navigation"]
+      .container.right
         .navbar-header
           button.navbar-toggle[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"]
             span.sr-only
@@ -9,7 +9,13 @@
             span.icon-bar
             span.icon-bar
             span.icon-bar
-        .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        .collapse.navbar-collapse#bs-example-navbar-collapse-1.navbar-right
+          form.navbar-form.navbar-left role="search" 
+            .input-group
+              input.form-control placeholder="Поиск по сайту" type="text"
+                span.input-group-btn
+                  button.btn.btn-default type="submit"
+                    span.glyphicon.glyphicon-search
           ul.nav.navbar-nav
             li = link_to "Главная", root_path
             li.dropdown

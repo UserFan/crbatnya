@@ -1,6 +1,6 @@
 .navbar-default {
-    bottom: 5px;
-    background: transparent;   	
+    border-radius: 10px;
+    background-image: linear-gradient(to top left, white, #5bc0de); 	
     border-color: transparent;   
 }
 
@@ -15,92 +15,60 @@
 
 }
 
-.navbar-default .navbar-toggle {
-  border-color: green;
-}
+.navbar-default .navbar-toggle { border-color: green; }
 
 .navbar-default .navbar-nav .open .dropdown-menu {
     background-image: linear-gradient(to top left, white, lightgreen);
 }
 
-.navbar-default .navbar-toggle {
-    border-color: #DDD;
+header { 
+    border-radius: 10px;  
+    background-image: linear-gradient(to top left, white, lightblue); 
 }
 
-@media (max-width: 767px) {
-/* Цвет пунктов меню в раскрывающихся списках */
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-/* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-        background-image: linear-gradient(to top left, white, lightgreen);
-    }
+header h3 { line-height: 1.5; }
+
+.breadcrumb {
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    
 }
 
-.main {
-	  padding-top: 10px;
+.context {
+    margin-left: -40px;
+    margin-left: -10px;
 }
 
-.glyphicon-user {
-   
+.panel_phone {
+    margin: 0px;
+    background: transparent;
 }
 
-.menu_bar {
-   height: 40px;
-   border-radius: 5px;
-   background-image: linear-gradient(to top left, white, #428bca); 
-}
-
-header {   
-   background-image: linear-gradient(to top left, white, lightblue); 
-}
-
-header h3 {
-    line-height: 1.5;
-}
-
-.footer {
-  	font-size: 90%;
-}
+.footer { font-size: 90%; }
 
 .logo img {
-	  padding-top: 5px;
-	  padding-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
     width: 100%;
     height: auto;
 }
 
-.enroll {
-    top: 30px;
-}
+.mail {	top: 10px; }
 
-.mail {
-	top: 10px;
-}
+.banner img { padding: 3px; }
 
-.banner img {
-	  padding: 3px;  
-}
-
-.banner img:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); 
-}
+.banner img:hover { box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
 
 .banner {
     margin-top: 15px;
   	width: 240px;
 }
 
-#accordion li {
-    font-size: 88%;
-}
+#accordion li { font-size: 88%; }
 
 #carousel-example-generic {
-   width: 240px;
-   top: 10px;
+    width: 240px;
+    top: 10px;
 }
 
 .carousel .carousel-control { visibility: hidden; }
@@ -113,9 +81,8 @@ header h3 {
     background-color:rgba(255,255,255,.8);
 }
 
-#login-dp .help-block{
-    font-size:12px    
-}
+#login-dp .help-block { font-size:12px }
+
 #login-dp .bottom{
     background-color:rgba(255,255,255,.8);
     border-top:1px solid #ddd;
@@ -123,17 +90,11 @@ header h3 {
     padding:14px;
 }
 
-#login-dp .social-buttons{
-    margin:12px 0    
-}
+#login-dp .social-buttons { margin:12px 0 }
 
-#login-dp .social-buttons a{
-    width: 49%;
-}
+#login-dp .social-buttons a { width: 49%; }
 
-#login-dp .form-group {
-    margin-bottom: 10px;
-}
+#login-dp .form-group { margin-bottom: 10px; }
 
 .btn-fb{
     color: #fff;
@@ -155,7 +116,7 @@ header h3 {
     background-color:#59b5fa;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
     #login-dp{
         background-color: inherit;

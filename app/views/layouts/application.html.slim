@@ -13,23 +13,16 @@ html
       .row
         header
           = render "layouts/header"
-        .menu_bar
-          = render "layouts/menu_bar"
+        = render "layouts/menu_bar"
       .row
-        .main
+        col-sm-12.main
           .col-sm-3.sidebar
             = render "layouts/aside"
-          .col-sm-6
+          .col-sm-6.context
             .breadcrumb = render_breadcrumbs :separator => " / "
-            = render "shared/flash", flash: flash 
+            = render "shared/flash", flash: flash           
             = yield
           .col-sm-3
-            .input-group
-              input.form-control placeholder="Поиск по сайту" type="text"
-              span.input-group-btn
-                button.btn.btn-default type="submit"
-                  span.glyphicon.glyphicon-search
             = render "layouts/banner"
-      .row
         .col-sm-12.col-xs-12.footer
-            = render "layouts/footer"
+          = render "layouts/footer"

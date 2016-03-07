@@ -1,6 +1,6 @@
 .panel.panel-info
   .panel-heading 
-    h6.panel-title Оказываемые услуги населению
+    h6.panel-title Наши услуги
   ul.nav.nav-pills.nav-stacked
     li = link_to "Поликлиника", root_path
     li = link_to "Стационар", root_path
@@ -9,7 +9,7 @@
     li = link_to "Диспансеризация", guarantee_program_path
     li = link_to "Скорая неотложная помощь", root_path
     li = link_to "Фельдшерско-акушерские пункты", root_path
-
+= link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info"
 #accordion.panel-group
   .panel.panel-default
     .panel-heading

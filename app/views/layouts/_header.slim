@@ -1,20 +1,14 @@
 .row
-  .container-fluid
-    .col-sm-12
+  .col-sm-12
+    .container-fluid
       .col-xs-4.col-sm-2.pull-left.logo = image_tag("logo_medic1.png", alt: "gerb")
       .col-sm-8
-        h3 Государственное автономное учреждение здравоохранения 
-                    
-          "Атнинская центральная районная больница"
+        h3 Государственное автономное учреждение здравоохранения "Атнинская центральная районная больница"
       .col-sm-2
-        .row
-          .col-sm-12
-            h5.span.glyphicon.glyphicon-phone-alt.text-info.pull-left
-              |  8(8-269)2-21-00
-        .row
-          .col-sm-12
-            p.span.glyphicon.glyphicon-envelope.text-info.mail
-              = mail_to "srb.atnya@tatar.ru"
-          .col-sm-12.enroll
-            p.pull-right = link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info"
+        .panel.panel-default.panel_phone
+          .panel-body
+            h4.span.glyphicon.glyphicon-phone-alt.text-info
+              |  8(8269)2-21-00
+            p.span.glyphicon.glyphicon-envelope.text-info = mail_to "srb.atnya@tatar.ru"
+ 
       
