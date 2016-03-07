@@ -38,8 +38,8 @@
             li = link_to "Узнай свой участок", "#myModal", "data-toggle" => "modal"
                
             li.dropdown
-              = link_to "Вход", root_path, "data-toggle" => "dropdown", class: "dropdown-toggle"
-                /span.glyphicon.glyphicon-user 
+              /span.glyphicon.glyphicon-user
+              = link_to content_tag(:span, "Вход".html_safe, :class => "glyphicon glyphicon-user").html_safe, root_path, class: "dropdown-toggle", "data-toggle" => "dropdown"
               /a.dropdown-toggle data-toggle="dropdown" href="#" 
                 /span.glyphicon.glyphicon-user
                 /|  Вход
