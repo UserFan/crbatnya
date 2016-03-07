@@ -26,7 +26,11 @@ header {
     background-image: linear-gradient(to top left, white, lightblue); 
 }
 
-header h3 { line-height: 1.5; }
+header h3 {
+    margin-top: 5px; 
+    line-height: 2.5; 
+    
+}
 
 .breadcrumb {
     background: transparent;
@@ -41,15 +45,32 @@ header h3 { line-height: 1.5; }
 }
 
 .panel_phone {
-  
-    margin-top: 15px;
+    
+    margin-top: 0px;
     margin-left: -20px;
     margin-right: -50px;
-}
-.panel_phone .panel-default {
-    
     width: auto;
     background: transparent;
+    border: 0px;
+}
+
+.panel_phone h4 {
+    font-size: 1.5em;
+    color: #d9534f;
+}
+
+.panel_phone .panel-body {
+    padding: 0px;
+    padding-left: 15px;
+    
+}
+
+.contact {
+    font-size: 65%
+}
+
+.entry_doctor {
+    padding-top: 10px;
 }
 
 .footer { font-size: 90%; }
@@ -143,6 +164,25 @@ header h3 { line-height: 1.5; }
         border-top:0 none;
     }
 
+    .panel_phone {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #searchbar {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #searchbar {
+    width: 425px;
+  }
 }
 
 

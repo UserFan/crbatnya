@@ -3,15 +3,22 @@
     .container-fluid
       .col-xs-4.col-sm-2.pull-left.logo = image_tag("logo_medic1.png", alt: "gerb")
       .col-sm-8.title-logo
-        h3 Государственное автономное учреждение здравоохранения "Атнинская центральная районная больница"
+        h3[align="center"] 
+          |Государственное автономное учреждение здравоохранения
+          br
+          strong "АТНИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"
       .col-sm-2
-        .container-fluid.panel_phone.hidden-xs
+        .container-fluid
           .row
-            .panel.panel-default
+            .panel.pull-right.panel_phone
               .panel-body
-                h4.span.glyphicon.glyphicon-phone-alt.text-info
+                h4.span.glyphicon.glyphicon-phone-alt.pull-left.text-info
                   |  8(8269)2-21-00
                 .row
-                p.span.glyphicon.glyphicon-envelope.text-info = mail_to "srb.atnya@tatar.ru"
- 
+                p.span.glyphicon.glyphicon-envelope.pull-left.text-info = mail_to "srb.atnya@tatar.ru"
+                .row                   
+                p.contact 422750, Республика Татарстан, Атнинский р-н, с.Большая Атня, ул.Пролетарская, д.1
+                .row
+                p.entry_doctor.pull-right = link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info"
+   
       
