@@ -1,7 +1,13 @@
 .navbar-default {
+
     border-radius: 10px;
     background-image: linear-gradient(to top left, white, #5bc0de); 	
     border-color: transparent;   
+}
+
+
+.navbar-form {
+    margin-left: -15px;
 }
 
 .navbar-default .navbar-nav > .open > a, 
@@ -18,7 +24,7 @@
 .navbar-default .navbar-toggle { border-color: green; }
 
 .navbar-default .navbar-nav .open .dropdown-menu {
-    background-image: linear-gradient(to top left, white, lightgreen);
+    background-image: linear-gradient(to top left, white, lightblue);
 }
 
 header { 
@@ -187,7 +193,8 @@ header h3 {
 
 @media (min-width: 1200px) {
   #searchbar {
-    width: 425px;
+    width: 380px;
+    left: 0px;
   }
 }
 
