@@ -1,24 +1,25 @@
 .navbar-default {
-
     border-radius: 10px;
-    background-image: linear-gradient(to top left, white, #5bc0de); 	
-    border-color: transparent;   
+    background-image: linear-gradient(to top left, white, #5bc0de);
+    border-color: transparent;
 }
 
-
-.navbar-form {
-    margin-left: -15px;
-}
-
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: red;
     background: transparent;
     outline: none;
+}
 
+.navbar-form.navbar-left {
+  padding: 0;
+}
+
+.collapse.navbar-collapse {
+  padding: 0px;
 }
 
 .navbar-default .navbar-toggle { border-color: green; }
@@ -27,15 +28,14 @@
     background-image: linear-gradient(to top left, white, lightblue);
 }
 
-header { 
-    border-radius: 10px;  
-    background-image: linear-gradient(to top left, white, lightblue); 
+header {
+    border-radius: 10px;
+    background-image: linear-gradient(to top left, white, lightblue);
 }
 
 header h3 {
-    margin-top: 15px; 
-    line-height: 1.2; 
-    
+    margin-top: 15px;
+    line-height: 1.2;
 }
 
 .title-logo h4{
@@ -46,17 +46,17 @@ header h3 {
 .breadcrumb {
     background: transparent;
     border-bottom: 1px solid #ddd;
-    
+
 }
 
 
 .context {
-    
+
     margin-left: -10px;
 }
 
 .panel_phone {
-    
+
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: -20px;
@@ -73,12 +73,11 @@ header h3 {
 
 .panel_phone h5 {
     margin-top: 5px;
-} 
+}
 
 .panel_phone .panel-body {
     padding: 0px;
     padding-left: 15px;
-    
 }
 
 .contact {
@@ -93,7 +92,7 @@ header h3 {
 
 .title-logo {
     margin-left: -25px;
-    margin-right: -10px; 
+    margin-right: -10px;
 }
 
 .logo img {
@@ -113,13 +112,13 @@ header h3 {
 
 .banner {
     margin-top: 20px;
-  	width: 240px;
+  	// width: 240px;
 }
 
-#accordion li { font-size: 88%; }
+// #accordion li { font-size: 88%; }
 
 #carousel-example-generic {
-    width: 240px;
+    // width: 240px;
     top: 0px;
 }
 
@@ -155,7 +154,7 @@ header h3 {
 
 .btn-fb:hover{
     color: #fff;
-    background-color:#496ebc 
+    background-color:#496ebc
 }
 
 .btn-tw{
@@ -201,6 +200,3 @@ header h3 {
     left: 0px;
   }
 }
-
-
-

@@ -15,14 +15,18 @@ html
           = render "layouts/header"
         = render "layouts/menu_bar"
       .row
-        col-sm-12.main
-          .col-sm-3.sidebar
-            = render "layouts/aside"
-          .col-sm-6.context
-            .breadcrumb = render_breadcrumbs :separator => " / "
-            = yield
-          .col-sm-3.hidden-xs
-            = render "layouts/banner"
+        .col-sm-12.main
+          .row
+            .col-sm-3.sidebar
+              .row
+                = render "layouts/aside"
+            .col-sm-6.context
+              .row
+                .breadcrumb = render_breadcrumbs :separator => " / "
+                = yield
+            .col-sm-3.hidden-xs
+              .row
+                = render "layouts/banner"
         .col-sm-12.col-xs-12.footer
           = render "layouts/footer"
     = render "devise/registrations/new" 

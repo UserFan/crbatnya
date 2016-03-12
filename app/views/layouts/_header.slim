@@ -1,27 +1,22 @@
-.row
-  .col-sm-12
+.col-sm-12
+  .hidden-xs.col-sm-2.logo = image_tag("logo_medic1.png", alt: "gerb")
+  .col-sm-7.col-md-8.title-logo
+    h3[align="center"] 
+      = "Государственное автономное учреждение здравоохранения"
+    h4[align="center"]
+      strong "АТНИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"
+  .col-sm-3.col-md-2
     .container-fluid
-      .col-xs-4.col-sm-2.pull-left.logo = image_tag("logo_medic1.png", alt: "gerb")
-      .col-sm-8.title-logo
-        h3[align="center"] 
-          |Государственное автономное
-          br
-          |учреждение здравоохранения
-          br
-        h4[align="center"]
-          strong "АТНИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"
-      .col-sm-2
-        .container-fluid
-          .row
-            .panel.pull-right.panel_phone
-              .panel-body
-                h4.span.glyphicon.glyphicon-phone-alt.pull-left.text-info
-                  |  8(8269)2-21-00
-                .row
-                h5.text-info.pull-left = mail_to content_tag(:span, " srb.atnya@tatar.ru", :class => "glyphicon glyphicon-envelope").html_safe
-                .row                   
-                p.contact 422750, Республика Татарстан, Атнинский р-н, с.Большая Атня, ул.Пролетарская, д.1
-                .row
-                p.entry_doctor.pull-right = link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info"
-   
-      
+      .row
+        .panel.pull-right.panel_phone
+          .panel-body
+            h4.span.glyphicon.glyphicon-phone-alt.pull-left.text-info
+              |  8(8269)2-21-00
+            .row
+            h5.text-info.pull-left = mail_to content_tag(:span, " srb.atnya@tatar.ru", :class => "glyphicon glyphicon-envelope").html_safe
+            .row                   
+            p.contact 422750, Республика Татарстан, Атнинский р-н, с.Большая Атня, ул.Пролетарская, д.1
+            .row
+            p.entry_doctor.pull-right = link_to "Запись к специалисту", "https://uslugi.tatarstan.ru/mis/index", target: "_blank", class: "btn btn-large btn-primary info"
+
+  
