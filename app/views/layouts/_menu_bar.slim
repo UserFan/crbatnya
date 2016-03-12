@@ -21,7 +21,7 @@
             li.dropdown
               = link_to "О больнице", root_path, "data-toggle" => "dropdown", class: "dropdown-toggle"
               ul.dropdown-menu.dropdown-menu-left[role="menu"]
-                li = link_to "История", root_path
+                li = link_to "История", new_user_session_path
                 li = link_to "Руководство", root_path
                 li = link_to "Карьера", root_path
                 li = link_to "Нормативные документы", root_path
@@ -36,43 +36,54 @@
                 li = link_to "Необходимые документы", root_path
                 li = link_to "Подготовка к обследованиям", root_path
             li = link_to "Узнай свой участок", "#myModal", "data-toggle" => "modal"
-               
-            li.dropdown
-              /span.glyphicon.glyphicon-user
-              = link_to content_tag(:span, "Вход".html_safe, :class => "glyphicon glyphicon-user").html_safe, root_path, class: "dropdown-toggle", "data-toggle" => "dropdown"
-              /a.dropdown-toggle data-toggle="dropdown" href="#" 
-                /span.glyphicon.glyphicon-user
-                /|  Вход
-              ul#login-dp.dropdown-menu
-                li
-                  .row
-                    .col-md-12
-                      | Войти с помощью  
-                      .social-buttons
-                        a.btn.btn-fb href="#" 
-                          i.fa.fa-facebook
-                          | Facebook
-                        a.btn.btn-tw href="#" 
-                          i.fa.fa-twitter
-                          | Twitter
-                      form#login-nav.form accept-charset="UTF-8" action="login" method="post" role="form" 
-                        .form-group
-                          label.sr-only for="exampleInputEmail2"  Email address
-                          input#exampleInputEmail2.form-control placeholder=("Email address") required="" type="email"
-                        .form-group
-                          label.sr-only for="exampleInputPassword2"  Пароль
-                          input#exampleInputPassword2.form-control placeholder="Password" required="" type="password"
-                          .help-block.text-right
-                            a href=""  Забыли пароль?
-                        .form-group
-                          button.btn.btn-primary.btn-block type="submit"  Войти
-                        .checkbox
-                          label
-                            input type="checkbox"
-                            | запомнить меня
-                    .bottom.text-center
-                      a href="#" 
-                        b Регистрация  
+            /в зависимости ауентификации пользователя пункты меню меняются   
+            - if user_signed_in?
+              li.dropdown
+                a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+                  /span.glyphicon.glyphicon-user 
+                  = "#{current_user.first_name} #{current_user.last_name}" 
+                ul.dropdown-menu
+                  li = link_to 'Профиль', user_root_path
+                  li = link_to 'Настройки', edit_user_registration_path
+                  li.divider role="separator"
+                  li = link_to 'Выход', destroy_user_session_path, method: 'delete'
+            - else
+
+              li.dropdown
+                = link_to content_tag(:span, "Вход".html_safe, :class => "glyphicon glyphicon-user").html_safe, root_path, class: "dropdown-toggle", "data-toggle" => "dropdown"
+                ul#login-dp.dropdown-menu
+                  li
+                    .row
+                      .col-md-12
+                        | Войти с помощью  
+                        .social-buttons
+                          a.btn.btn-fb href="#" 
+                            i.fa.fa-facebook
+                            | Facebook
+                          a.btn.btn-tw href="#" 
+                            i.fa.fa-twitter
+                            | Twitter
+                        = render "shared/flash", flash: flash
+                        = render "devise/sessions/news"
+                      /  
+                        form#login-nav.form accept-charset="UTF-8" action="login" method="post" role="form" 
+                          .form-group
+                            label.sr-only for="exampleInputEmail2"  Email address
+                            input#exampleInputEmail2.form-control placeholder=("Email address") required="" type="email"
+                          .form-group
+                            label.sr-only for="exampleInputPassword2"  Пароль
+                            input#exampleInputPassword2.form-control placeholder="Password" required="" type="password"
+                            .help-block.text-right
+                              a href=""  Забыли пароль?
+                          .form-group
+                            button.btn.btn-primary.btn-block type="submit"  Войти
+                          .checkbox
+                            label
+                              input type="checkbox"
+                              | запомнить меня
+                      .bottom.text-center
+                        = link_to "Регистрация", "#myModalSignUp", "data-toggle" => "modal"
+
   /
         - if current_user
           li.dropdown

@@ -24,6 +24,6 @@ module CrbatnyaApp
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.assets.initialize_on_precompile = false
-    config.i18n.default_locale = :ru
+    config.i18n.default_locale = :en
   end
 end

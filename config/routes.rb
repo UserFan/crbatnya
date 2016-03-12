@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   root  'static_pages#home'
   
+  get 'persons/profile', as: 'user_root'
   get '/about', to: 'static_pages#about'
   get '/list_drugs', to: 'static_pages#list_drugs'
   get '/preferential_drugs', to: 'static_pages#preferential_drugs'

@@ -5,6 +5,7 @@
         button.close aria-hidden="true" data-dismiss="modal" type="button"  &times;
         h4#myModalLabel.modal-title Узнать свой участок
       .modal-body
+        = render "shared/flash", flash: flash 
         form role="form" 
           .form-group
             label for="area"  Район
